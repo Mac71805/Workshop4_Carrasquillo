@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Dealership {
     private String name;
@@ -41,12 +42,37 @@ public class Dealership {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+    public void addVehicle(Vehicle vehicle) {
+        inventory.add(vehicle);
+    }
 
-    public ArrayList<Vehicle> getInventory() {
+
+    public ArrayList<Vehicle> getAllVehicles() {
         return inventory;
     }
 
-    public void setInventory(ArrayList<Vehicle> inventory) {
-        this.inventory = inventory;
+
+    public List<Vehicle> getVehiclesByPrice(double min, double max) {
+        return null;
+    }
+
+    public List<Vehicle> getVehiclesByMakeModel(String make, String model) {
+        return null;
+    }
+
+    public List<Vehicle> getVehiclesByYear(int min, int max) {
+        return null;
+    }
+
+    public List<Vehicle> getVehiclesByColor(String color) {
+        return null;
+    }
+
+    public List<Vehicle> getVehiclesByMileage(int min, int max) {
+        return null;
+    }
+
+    public List<Vehicle> getVehiclesByType(String vehicleType) {
+        return null;
     }
 }
