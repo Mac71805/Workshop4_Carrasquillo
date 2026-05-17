@@ -30,6 +30,7 @@ public class UserInterface {
             System.out.println("7 - List ALL vehicles");
             System.out.println("8 - Add vehicle");
             System.out.println("9 - Remove vehicle");
+            System.out.println("10 - Sell/Lease a vehicle");
             System.out.println("99 - Quit");
 
             System.out.print("Enter command: ");
@@ -71,6 +72,10 @@ public class UserInterface {
 
                 case 9:
                     processRemoveVehicleRequest();
+                    break;
+
+                case 10:
+                    processSellOrLeaseVehicle();
                     break;
 
                 case 99:
@@ -137,6 +142,9 @@ public class UserInterface {
     }
 
     public void processRemoveVehicleRequest() {
+
+    }
+    public void processSellOrLeaseVehicle() {
 
     }
 }
